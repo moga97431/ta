@@ -24,12 +24,12 @@ if not os.path.exists('data.json'):
 	data = {'bot':'on','autojoin':'off','contact':'off','secretary':'off','forward':'on','forwardauthor':'off','forwardtime':10,'forwardid':0,'forwardchat':None,'forwardtype':None,'forwardreply':None,'subscription':30,'admins':[],'groups':[],'secretarytext':[]}
 	put('data.json',data)
 
-api_id = 20361027 #ای پی ای دی
-api_hash = '9bdf0b20b941a1a17f1cb5f58e2a94f0' #ای پی هش
+api_id = 27393668 #ای پی ای دی
+api_hash = 'ccb00de76c0c8e7836e8b21234c64412' #ای پی هش
 
 bot = TelegramClient(input('enter the session name : '),api_id,api_hash)
 
-dev = 5351071622 #ایدی عددی
+dev = 1316102722 #ایدی عددی
 
 async def forward_message(to_peer,id,from_peer,reply_text,drop_author):
 	message = await bot(functions.messages.ForwardMessagesRequest(from_peer = from_peer,id = [id],to_peer = to_peer,drop_author = drop_author))
